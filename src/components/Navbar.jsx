@@ -18,21 +18,21 @@ const Navbar = () => {
                 <Link to="/" className="hover:text-orange-500 transition">
                     Home
                 </Link>
-
-                <Link to="/register" className="hover:text-orange-500 transition">
-                    Register
+                <Link to="/about" className="hover:text-orange-500 transition">
+                    About
+                </Link>
+                <Link to="/programs" className="hover:text-orange-500 transition">
+                    Programs
                 </Link>
 
                 <Link to="/pricing" className="hover:text-orange-500 transition">
                     Pricing
                 </Link>
-
-                <Link to="/about" className="hover:text-orange-500 transition">
-                    About
-                </Link>
-
                 <Link to="/calculations" className="hover:text-orange-500 transition">
                     Calculations
+                </Link>
+                <Link to="/contact" className="hover:text-orange-500 transition">
+                    Contact
                 </Link>
             </div>
             <div className="flex gap-4">
