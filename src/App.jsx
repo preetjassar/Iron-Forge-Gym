@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import Pricing from "./components/Pricing";
 import "./App.css";
 import Calculations from "./components/Calculations";
+import Programs from "./components/Programs";
+import Contact from "./components/Contact";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +18,10 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
+      {
+        path: "programs",
+        element: <Programs />,
+      },
 
       {
         path: "pricing",
@@ -25,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "calculations",
         element: <Calculations />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
       },
     ],
   },

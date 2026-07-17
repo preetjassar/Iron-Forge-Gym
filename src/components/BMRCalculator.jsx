@@ -46,7 +46,6 @@ export default function BMRCalculator() {
 
                     <form onSubmit={handleSubmit(onSubmit)}>
 
-                        {/* Gender */}
                         <div className="mb-5">
                             <label className="text-sm text-slate-300">
                                 Gender
@@ -67,14 +66,14 @@ export default function BMRCalculator() {
                                 </option>
                             </select>
 
-                            {errors.gender && (
-                                <p className="text-red-400 text-sm mt-1">
-                                    {errors.gender.message}
-                                </p>
-                            )}
+                            <p className="text-red-400 text-sm h-[20px]">
+                                {errors.gender && (
+                                    errors.gender.message
+                                )}
+                            </p>
                         </div>
 
-                        {/* Age */}
+
                         <div className="mb-5">
                             <label className="text-sm text-slate-300">
                                 Age (Years)
@@ -93,14 +92,14 @@ export default function BMRCalculator() {
                                 className="mt-2 w-full rounded-xl bg-gray-800 border border-gray-500 px-4 py-3 text-white placeholder:text-gray-500 outline-none"
                             />
 
-                            {errors.age && (
-                                <p className="text-red-400 text-sm mt-1">
-                                    {errors.age.message}
-                                </p>
-                            )}
+                            <p className="text-red-400 text-sm h-[20px]">
+                                {errors.age && (
+                                    errors.age.message
+                                )}
+                            </p>
                         </div>
 
-                        {/* Height */}
+
                         <div className="mb-5">
                             <label className="text-sm text-slate-300">
                                 Height (cm)
@@ -119,14 +118,14 @@ export default function BMRCalculator() {
                                 className="mt-2 w-full rounded-xl bg-gray-800 border border-gray-500 px-4 py-3 text-white placeholder:text-gray-500 outline-none"
                             />
 
-                            {errors.height && (
-                                <p className="text-red-400 text-sm mt-1">
-                                    {errors.height.message}
-                                </p>
-                            )}
+                            <p className="text-red-400 text-sm h-[20px]">
+                                {errors.height && (
+                                    errors.height.message
+                                )}
+                            </p>
                         </div>
 
-                        {/* Weight */}
+
                         <div className="mb-5">
                             <label className="text-sm text-slate-300">
                                 Weight (kg)
@@ -144,12 +143,11 @@ export default function BMRCalculator() {
                                 })}
                                 className="mt-2 w-full rounded-xl bg-gray-800 border border-gray-500 px-4 py-3 text-white placeholder:text-gray-500 outline-none"
                             />
-
-                            {errors.weight && (
-                                <p className="text-red-400 text-sm mt-1">
-                                    {errors.weight.message}
-                                </p>
-                            )}
+                            <p className="text-red-400 text-sm h-[20px]">
+                                {errors.weight && (
+                                    errors.weight.message
+                                )}
+                            </p>
                         </div>
 
                         <button
