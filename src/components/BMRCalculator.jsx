@@ -29,7 +29,7 @@ export default function BMRCalculator() {
     };
 
     return (
-        <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 px-6 py-20">
+        <section className="bg-gray-800 border border-gray-500 rounded-3xl p-8 shadow-2xl h-full min-h-[620px]">
             <div className="w-full max-w-lg">
 
                 <div className="text-center mb-8">

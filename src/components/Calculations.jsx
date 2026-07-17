@@ -9,7 +9,7 @@ export default function Calculations() {
                 Health Calculations
             </h1>
 
-            <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto items-center">
+            <div className="grid md:grid-cols-2 gap-10 items-center">
 
                 <BMICalculator />
 

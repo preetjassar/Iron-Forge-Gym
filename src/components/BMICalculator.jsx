@@ -32,7 +32,7 @@ export default function BMICalculator() {
     };
 
     return (
-        <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 px-6 py-20">
+        <section className="bg-gray-800 border border-gray-500 rounded-3xl p-8 shadow-2xl h-full min-h-[620px]">
             <div className="w-full max-w-lg">
 
                 <div className="text-center mb-8">
@@ -40,7 +40,7 @@ export default function BMICalculator() {
                         BMI Calculator
                     </h2>
 
-                    <p className="text-slate-400 mt-3">
+                    <p className="text-slate-400 mt-5">
                         Check your body mass index and understand your health category.
                     </p>
                 </div>
@@ -50,7 +50,7 @@ export default function BMICalculator() {
                     <form onSubmit={handleSubmit(onSubmit)} >
 
                         <div>
-                            <label className="text-sm text-slate-300 mb-5">
+                            <label className="text-sm text-slate-300 mb-7">
                                 Height (cm)
                             </label>
 
@@ -68,7 +68,7 @@ export default function BMICalculator() {
                             />
 
                             {errors.height && (
-                                <p className="text-red-400 text-sm mt-1">
+                                <p className="text-red-400 text-sm mt-3">
                                     {errors.height.message}
                                 </p>
                             )}
@@ -76,7 +76,7 @@ export default function BMICalculator() {
 
                         {/* Weight */}
                         <div>
-                            <label className="text-sm text-slate-300 mb-5">
+                            <label className="text-sm text-slate-300 mb-7">
                                 Weight (kg)
                             </label>
 
@@ -94,7 +94,7 @@ export default function BMICalculator() {
                             />
 
                             {errors.weight && (
-                                <p className="text-red-400 text-sm mt-1">
+                                <p className="text-red-400 text-sm mt-3">
                                     {errors.weight.message}
                                 </p>
                             )}
