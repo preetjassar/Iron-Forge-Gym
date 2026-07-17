@@ -66,12 +66,11 @@ export default function BMICalculator() {
                                 })}
                                 className="mt-2 w-full rounded-xl bg-gray-800 border border-gray-500 px-4 py-3 text-white placeholder:text-gray-500 outline-none "
                             />
-
-                            {errors.height && (
-                                <p className="text-red-400 text-sm mt-3">
-                                    {errors.height.message}
-                                </p>
-                            )}
+                            <p className="text-red-400 text-sm h-[20px]">
+                                {errors.height && (
+                                    errors.height.message
+                                )}
+                            </p>
                         </div>
 
                         {/* Weight */}
@@ -93,11 +92,11 @@ export default function BMICalculator() {
                                 className="mt-2 w-full rounded-xl bg-gray-800 border border-gray-500 px-4 py-3 text-white placeholder:text-gray-500 outline-none"
                             />
 
-                            {errors.weight && (
-                                <p className="text-red-400 text-sm mt-3">
-                                    {errors.weight.message}
-                                </p>
-                            )}
+                            <p className="text-red-400 text-sm h-[20px]">
+                                {errors.weight && (
+                                    errors.weight.message
+                                )}
+                            </p>
                         </div>
 
                         <button
